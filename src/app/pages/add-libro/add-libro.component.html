@@ -1,0 +1,65 @@
+
+<div id="registerPanel">
+  <h1 class="card-title" id="title">AGGIUNGI LIBRO</h1>
+  <form class="form-horizontal" (ngSubmit)="addLibro(libroData.value)" #libroData="ngForm" autocomplete="off">
+
+    <div class="form-group">
+      <label for="titolo" class="col-lg-2 control-label" id="label">Titolo</label>
+      <div class="col-lg-12">
+        <input type="text" class="form-control" id="titolo" name="titolo" placeholder="inserisci il titolo del libro..." required ngModel>
+      </div>
+    </div>
+    <hr>
+
+    <div class="form-group">
+      <label for="autore" class="col-lg-2 control-label" id="label">Autore</label>
+      <div class="col-lg-12">
+        <select name="autore" id="autore" ngModel>
+            <option disabled selected value> -- Seleziona un Autore -- </option>
+            <option *ngFor="let aut of autore" value={{aut.id}}>{{aut.nome}} {{aut.cognome}}</option>
+        </select>
+      </div>
+      <a id="link_registrati" routerLink="/addAutore" >Aggiungi Autore</a>
+    </div>
+    <hr>
+
+    <div class="form-group">
+      <label for="editore" class="col-lg-2 control-label" id="label">Casa Editrice</label>
+      <div class="col-lg-12">
+        <select name="editore" id="editore" ngModel>
+            <option disabled selected value> -- Seleziona una Casa Editrice -- </option>
+            <option *ngFor="let edit of editore" value={{edit.id}}>{{edit.nome_editore}}</option>
+        </select>
+      </div>
+      <a id="link_registrati" routerLink="/addEditore" >Aggiungi Casa Editrice</a>
+    </div>
+    <hr>
+    <div class="form-group">
+      <label for="copie" class="col-lg-2 control-label" id="label">Numero di Copie</label>
+      <div class="col-lg-12">
+        <input type="number" id="copie" name="copie" placeholder="Inserisci numero di copie..." ngModel>
+      </div>
+    </div>
+    <hr>
+    <div class="form-group">
+      <label for="copertina" class="col-lg-2 control-label" id="label">Copertina</label>
+      <div class="col-lg-12">
+        <input type="copertina" class="form-control" id="copertina" name="copertina" placeholder="Inserisci link all'immagine della copertina..." required ngModel>
+      </div>
+    </div>
+    <hr>
+    <div class="form-group">
+      <label for="trama" class="col-lg-2 control-label" id="label">Trama</label>
+      <div class="col-lg-12">
+        <input type="text" class="form-control" id="trama" name="trama" placeholder="inserisci la trama del libro..." required ngModel>
+      </div>
+    </div>
+    <hr>
+    <div class="form-group" id="btns">
+      <div id="btns">
+        <button type="submit" id="btn">AGGIUNGI</button>
+      </div>
+    </div>
+  </form>
+</div>
+

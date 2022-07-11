@@ -1,0 +1,31 @@
+<div id="box_prestito">
+  <h1 id="h1_style">Prestito</h1>
+  <div *ngFor="let lib of libro">
+    <div *ngFor="let aut of autore">
+      <div *ngFor="let edit of editore">
+        <div *ngIf="lib.id == id_libro" id="li_prestito">
+          <div *ngIf="lib.id_autore == aut.id">
+            <div *ngIf="lib.id_casa_editrice == edit.id">
+              <img src={{lib.copertina}} alt="" id="img_prestito">
+              <p id="title">{{lib.titolo}} | {{aut.nome}} {{aut.cognome}} | {{edit.nome_editore}} </p>
+              <br>
+              <p id="title">COPIE DISPONIBILI: {{lib.n_copie}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div id="prestito_options">
+
+    <label for="giorni_prestito">Durata del prestito</label>
+    <br>
+    <select name="giorni_prestito" id="giorni_prestito">
+      <option value="7">7 GIORNI</option>
+      <option value="14">14 GIORNI</option>
+      <option value="21">21 GIORNI</option>
+    </select>
+    <button id="btn_conferma" (click)="conferma()">CONFERMA PRESTITO</button>
+  </div>
+</div>

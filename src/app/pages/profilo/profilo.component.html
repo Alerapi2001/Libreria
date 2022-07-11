@@ -1,0 +1,34 @@
+<div id="profilo">
+    <div *ngFor="let user of utenti">
+        <div *ngIf="user.id == userCurrent ">
+            <h1 id="nomeCognome">{{user.nome}} {{user.cognome}}</h1>
+        </div>
+    </div>
+    <div *ngFor="let user of utenti">
+        <div *ngIf="user.id == userCurrent ">
+            <ul>
+                <li id="li_user"><i id="user">nome:</i><span class="spanUser">{{user.nome}}</span>
+                </li>
+                <li id="li_user"><i id="user">Cognome:</i><span class="spanUser">{{user.cognome}}</span>
+                </li>
+                <li id="li_user"><i id="user">UserName:</i><span class="spanUser">{{user.username}}</span>
+                </li>
+                <li id="li_user"><i id="user">email:</i><span class="spanUser">{{user.email}}</span>
+                </li>
+                <li id="li_user"><i id="user">password:</i><button id="btnModifica" (click)="cambioPassword()">modifica</button><input type="password" id="passwordUser" value={{user.password}} disabled="disabled">
+
+                </li>
+                <div *ngIf="user.sesso == 'M'">
+                <li id="li_user"><i id="user">sesso:</i><span class="spanUser">MASCHIO</span>
+                </li>
+              </div>
+              <div *ngIf="user.sesso == 'F'">
+                <li id="li_user"><i id="user">sesso:</i><span class="spanUser">FEMMINA</span>
+                </li>
+              </div>
+                <li id="li_user"><i id="user">data di nascita:</i><span class="spanUser">{{user.data_nascita}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

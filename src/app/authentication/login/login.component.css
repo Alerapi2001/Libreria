@@ -1,0 +1,99 @@
+#registerPanel{
+  width: 800px;
+  margin: 100px auto;
+  background-color: #f6f6f6;
+  box-shadow: 0 0 5px black;
+}
+
+#title{
+  background-color: #ba2626;
+  padding: 20px;
+  text-align: center;
+  color: #f6f6f6;
+}
+
+#label{
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  width: 100%;
+  color: #1a1a1a;
+}
+
+input,select{
+  background-color: #ba2626;
+  color: #f6f6f6;
+  font-size: 20px;
+  text-align: center;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+}
+
+select{
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+label{
+  text-transform: capitalize;
+}
+
+select>option{
+  text-transform: uppercase;
+}
+
+input:focus{
+  border: 3px solid white;
+}
+
+input::placeholder{
+  color: #f8f8f8;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#btn{
+  background-color: #ba2626;
+  color: #f6f6f6;
+  font-size: 30px;
+  text-align: center;
+  width: 400px;
+  padding: 10px;
+  border: none;
+  transition: all 0.5s ease;
+}#btn:hover{
+  background-color: #f6f6f6;
+  color: #ba2626;
+}
+
+#btns{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#link_registrati{
+  color: #ba2626;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  transition: all .3s;
+}
+
+#link_registrati:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#box_input_select{
+  margin: 0 auto !important;
+
+}

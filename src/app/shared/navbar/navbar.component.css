@@ -1,0 +1,67 @@
+#navbar{
+  background-color: #ba2626;
+  box-shadow: 0 0 5px black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+#navbar a{
+  color:#f6f6f6;
+  text-transform: uppercase;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+}
+
+#btn_search{
+  background-color: #f6f6f6;
+  transition: all .3s;
+}
+
+
+
+ul li.active:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+#btn_search:hover{
+  background-color: #ba2626;
+  color: #f6f6f6;
+}
+
+#search{
+  margin: 0 auto;
+}
+
+#options_list{
+  position: absolute;
+  right: 0;
+}
+
+#user_options{
+  position: absolute;
+  right: 44%;
+}
+
+ul li a:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transition: width .3s;
+}
+
+ul li a:hover:before{
+  width: 100%;
+}

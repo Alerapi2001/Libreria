@@ -1,0 +1,24 @@
+<div id="registerPanel">
+  <h1 class="card-title" id="title">AGGIUNGI AUTORE</h1>
+  <form class="form-horizontal" (ngSubmit)="addAutore(autoreadd.value)" #autoreadd="ngForm">
+    <div class="form-group">
+      <label for="nome" class="col-lg-2 control-label" id="label">Nome Autore</label>
+      <div class="col-lg-12">
+        <input type="text" class="form-control" id="nome" name="nome" placeholder="Inserisci il nome" ngModel>
+      </div>
+    </div>
+    <hr>
+    <div class="form-group">
+      <label for="cognome" class="col-lg-2 control-label" id="label">Cognome Autore</label>
+      <div class="col-lg-12">
+        <input type="text" class="form-control" id="cognome" name="cognome" placeholder="inserisci il cognome" ngModel>
+      </div>
+    </div>
+    <hr>
+    <div class="form-group" id="btns">
+      <div id="btns">
+        <button type="submit" id="btn">AGGIUNGI</button>
+      </div>
+    </div>
+  </form>
+</div>

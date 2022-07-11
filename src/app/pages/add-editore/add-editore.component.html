@@ -1,0 +1,18 @@
+<div id="registerPanel">
+  <h1 class="card-title" id="title">AGGIUNGI CASA EDITRICE</h1>
+  <form class="form-horizontal" (ngSubmit)="addEditore(editoreadd.value)" #editoreadd="ngForm">
+    <div class="form-group">
+      <label for="editore" class="col-lg-2 control-label" id="label">Nome Casa Editrice</label>
+      <div class="col-lg-12">
+        <input type="text" class="form-control" id="editore" name="editore" placeholder="Inserisci il nome casa editrice" ngModel>
+      </div>
+    </div>
+    <hr>
+    <div class="form-group" id="btns">
+      <div id="btns">
+        <button type="submit" id="btn">AGGIUNGI</button>
+      </div>
+    </div>
+  </form>
+</div>
+

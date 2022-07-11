@@ -1,0 +1,25 @@
+<h1 id="h1_list_libri">lista libri libreria</h1>
+<hr>
+<div id="searchTitle">
+  <Label for="search" id="searchLabel">Ricerca</Label>
+  <form class="d-flex" role="search" id="search">
+    <input class="form-control me-2" type="search" name="search" placeholder="cerca libri/autori/editori..."
+      aria-label="Search" [(ngModel)]="term" id="searchBox">
+  </form>
+</div>
+<hr>
+<h1 (click)="get()" id="btnVisualizza">VISUALIZZA LISTA</h1>
+<hr>
+<div id="list">
+  <h1 *ngIf="checkAdmin == 1" routerLink="/addLibro" id="btnVisualizza">AGGIUNGI LIBRO</h1>
+  <hr>
+  <ul id="ul_list">
+    <li *ngFor="let list of listali | filter:term" id="li_list_libri"><img src={{list.copertina}} alt=""
+        id="img_copertine" (click)="manda(list.id)"> <i id="titoli_autori_editori">{{list.titolo}} |
+        {{list.nome_autore}} {{list.cognome_autore}} | {{list.nome_casa_editrice}} | COPIE RIMANENTI:
+        {{list.n_copie}}</i>
+      <button (click)="addCart(list.id)" id="addCartBtn">CARRELLO</button>
+    </li>
+  </ul>
+</div>
+

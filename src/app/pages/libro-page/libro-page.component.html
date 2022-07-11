@@ -1,0 +1,25 @@
+<div id="profilo">
+  <div *ngFor="let elem of libro">
+    <div *ngFor="let aut of autore">
+      <div *ngFor="let casaE of casaEditrice">
+        <div *ngIf="elem.id == libroCurrent && aut.id == elem.id_autore && casaE.id == elem.id_casa_editrice">
+          <h1 id="titoloLibro">{{elem.titolo}}</h1>
+          <div id="box"><img src={{elem.copertina}} alt="" id="imgLibro"></div>
+          <ul>
+            <li id="li_libro"><i id="libro">AUTORE:</i><span class="spanLibro">{{aut.nome}} {{aut.cognome}} </span>
+            </li>
+            <li id="li_libro"><i id="libro">CASA EDITRICE:</i><span class="spanLibro">{{casaE.nome_editore}} </span>
+            </li>
+            <li id="li_libro"><i id="libro">COPIE DISPONIBILI:</i><span class="spanLibro">{{elem.n_copie}} </span>
+            </li>
+          </ul>
+          <div class="divTrama">
+            <h1 id="trama" (click)="vediTrama()">TRAMA</h1>
+            <span class="trama" *ngIf="checkTrama == true">{{elem.trama}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

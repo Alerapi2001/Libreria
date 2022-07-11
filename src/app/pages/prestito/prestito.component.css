@@ -1,0 +1,71 @@
+#h1_style{
+  text-transform: uppercase;
+  color: #f6f6f6;
+  width: 100%;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  padding: 30px;
+  border-bottom: 3px solid #f5870a;
+}
+
+#box_prestito{
+  margin: 100px auto;
+  width: 80%;
+  background-color: #ba2626;
+  border-radius: 10px;
+}
+
+#prestito_options{
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#li_prestito{
+  list-style: none;
+  font-size: 30px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  color: #f6f6f6;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+#img_prestito{
+  width: 150px;
+  margin-bottom: 40px;
+}
+
+#title{
+  font-size: 30px;
+}
+
+#giorni_prestito{
+  background-color: #f6f6f6;
+  color: #1a1a1a;
+  width: 100%;
+  padding: 10px;
+}
+label{
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  font-family: 'Raleway', sans-serif;
+}
+
+#btn_conferma{
+  background-color: #f5870a;
+  color: #f6f6f6;
+  padding: 20px;
+  font-size: 30px;
+  margin-top: 60px;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  transition: all .3s;
+}
+#btn_conferma:hover{
+  background-color: #f6f6f6;
+  color: #f5870a;
+}
+

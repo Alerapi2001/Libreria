@@ -1,0 +1,51 @@
+#img_copertine{
+  width: 50px;
+  transition:all .3s;
+}
+
+#img_copertine:hover{
+  width: 100px;
+}
+
+#li_libri{
+  font-size: 30px;
+  list-style: none;
+  text-transform: uppercase;
+  border-top: 2px solid #f5870a;
+}
+
+#lista_ul{
+  background-color: #ba2626;
+  padding: 30px;
+  width: 80%;
+  margin: 100px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+}
+#titoli{
+  margin-left: 30px;
+  color: #f6f6f6;
+  font-family: 'Raleway', sans-serif;
+}
+
+#n_elem_carrello{
+  text-align: center;
+  color: #f6f6f6;
+  font-family: 'Raleway', sans-serif;
+  border-bottom: 5px solid #f5870a;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+
+#btnRemove{
+  background-color: #f5870a;
+  color: #f6f6f6;
+  float: right;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  transition: all .3s;
+}
+#btnRemove:hover{
+  background-color: #f6f6f6;
+  color: #f5870a;
+}

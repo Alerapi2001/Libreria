@@ -1,0 +1,119 @@
+#img_copertine{
+  width: 50px;
+  transition:all .3s;
+}
+
+#img_copertine:hover{
+  width: 100px;
+}
+
+#li_list_libri{
+  font-size: 20px;
+  list-style: none;
+  text-transform: uppercase;
+  color: #f6f6f6;
+}
+
+#titoli_autori_editori{
+  margin-left: 30px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#ul_list{
+  border-radius: 30px;
+  background-color: #ba2626;
+  padding: 30px;
+  box-shadow: 0 0 10px black;
+}
+
+#li_list_libri{
+  border-top: 2px solid #f5870a;
+}
+
+#list{
+  margin-top: 100px;
+}
+
+#h1_list_libri{
+  text-align: center;
+  margin-top: 40px;
+  text-transform: uppercase;
+  margin-top: 100px;
+  background-color: #ba2626;
+  color: #f6f6f6;
+  font-family: 'Raleway', sans-serif;
+  padding: 30px;
+  box-shadow: 0 0 5px black;
+}
+
+#btnVisualizza{
+  width: 40%;
+  border:none;
+  background-color:#ba2626 ;
+  color: #f6f6f6;
+  margin: 30px auto;
+  text-align: center;
+  transition: all .3s;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+#btnVisualizza:hover{
+  background-color:#f6f6f6 ;
+  color: #ba2626;
+  cursor: pointer;
+}
+
+#searchBox{
+  background-color: #ba2626;
+  opacity: 0.9;
+  color: #f6f6f6;
+  font-size: 20px;
+  text-align: center;
+  outline: none;
+}
+
+#searchBox:focus{
+  outline: none;
+  border: 3px solid #f6f6f6;
+}
+
+#searchBox::placeholder{
+  color: #f6f6f6;
+  background-color: #ba2626;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#searchTitle{
+  color: #f6f6f6;
+  background-color: #f5870a;
+  margin: 0 auto 50px auto;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  width: 80%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 5px black;
+}
+
+#searchLabel{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#addCartBtn{
+  background-color: #f5870a;
+  color: #f6f6f6;
+  float: right;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  transition: all .3s;
+}
+#addCartBtn:hover{
+  background-color: #f6f6f6;
+  color: #f5870a;
+}

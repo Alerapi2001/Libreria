@@ -1,0 +1,22 @@
+<div id="lista_ul">
+  <h1 id="n_elem_carrello">PRESTITI</h1>
+  <div id="searchTitle">
+    <Label for="search" id="searchLabel">Ricerca</Label>
+  <form class="d-flex" role="search" id="search">
+    <input class="form-control me-2" type="search" name="search" placeholder="cerca prestito..." aria-label="Search"  [(ngModel)]="term" id="searchBox">
+  </form>
+  </div>
+<h1 (click)="get()" id="btnVisualizza">VISUALIZZA LISTA</h1>
+<hr>
+  <ul *ngFor="let list of listapre | filter:term">
+    <li id="li_libri">
+      <ul>
+        <li id="li_li_libri">UTENTE: <i id="titoli">{{list.nome}}  {{list.cognome}}</i></li>
+          <li id="li_li_libri">LIBRO: <i id="titoli">{{list.titolo}}</i></li>
+            <li id="li_li_libri">TEMPO PRESTITO: <i id="titoli">{{list.tempo_prestito}}</i></li>
+            <li id="li_li_libri">GIORNO DEL PRESTITO: <i id="titoli">{{list.giorno_prestito}}</i></li>
+      </ul>
+      </li>
+  </ul>
+</div>
+

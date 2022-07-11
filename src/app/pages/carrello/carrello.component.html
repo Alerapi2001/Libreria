@@ -1,0 +1,11 @@
+<div id="lista_ul">
+  <h1 id="n_elem_carrello">CARRELLO ({{carrello.length}})</h1>
+<div *ngFor="let cart of carrello">
+<div *ngFor="let libri of libri">
+  <ul *ngIf=" cart.id_utente == id_utente && cart.id_libro == libri.id ">
+    <li id="li_libri"><img src={{libri.copertina}} alt="" id="img_copertine"><i id="titoli">{{libri.titolo}}</i> <button (click)="remove(cart.id)" id="btnRemove">RIMUOVI</button>
+      <button (click)="prestito(cart.id_libro,cart.id)" id="btnRemove">PRESTITO</button></li>
+  </ul>
+</div>
+</div>
+</div>
